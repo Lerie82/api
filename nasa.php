@@ -1,5 +1,4 @@
 <?php
-require_once("db.php");
 require_once("api.php");
 
 class NasaApi extends API
@@ -33,6 +32,7 @@ class NasaApi extends API
 		return $this->getApiData();
 	}
 
+	//browse all neo's
 	function neoBrowse()
 	{
 		$this->setApiUrl("https://api.nasa.gov/neo/rest/v1/neo/browse?api_key=".$this->getApiKey());
@@ -64,12 +64,4 @@ class NasaApi extends API
 		return $this->getApiData();
 	}
 }
-
-$nasa = new NasaApi("ds5c7GJpFf6sy75FW2T0P5VVQXXBX5VLtxcCVNtY");
-//$pod = $nasa->getPod();
-//$neos = $nasa->getNeos("2018-05-22","2018-05-29");
-//$neo = $nasa->getNeo("3542519");
-//$roverImgs = $nasa->getRoverImgs("CHEMCAM", 1, "curiosity");
-
-die(var_dump($roverImgs));
 ?>
