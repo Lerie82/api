@@ -1,6 +1,8 @@
 # About this Repo
 This project is a compilation of API that I use on my websites and in my applications. Some API is available from vendors in huge packages or classes that I do not need. Sometimes I only need a few API from here and there. This repository is not meant to implement ALL of the API from a given source.
 
+The API featured in this repository all use the REST API method.
+
 ## API
 The Api class lets you set api keys and urls and then get the data back.
 

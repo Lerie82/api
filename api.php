@@ -1,4 +1,9 @@
 <?php
+/*
+	api.php
+	lerie taylor
+*/
+
 class API
 {
 	private $api_url;
@@ -8,16 +13,19 @@ class API
 	{
 	}
 
+	//set the api key
 	function setApiKey($key)
 	{
 		$this->api_key = $key;
 	}
 
+	//return the current api key
 	function getApiKey()
 	{
 		return $this->api_key;
 	}
 
+	//use for GET requests
 	function getApiData()
 	{
                 if(!function_exists("curl_version"))
@@ -39,11 +47,18 @@ class API
 		return $data;
 	}
 
+	//used for POST requests
+	function postApiData()
+	{
+	}
+
+	//set the api url, the full url
 	function setApiUrl($url)
 	{
 		$this->api_url = $url;
 	}
 
+	//die and dump an error message
 	function apiError($e)
 	{
 		die(var_dump($e));
