@@ -24,7 +24,7 @@ $neo = $nasa->getNeo("3542519");
 $roverImgs = $nasa->getRoverImgs("CHEMCAM", 1, "curiosity");
 ```
 
-## Pastebin API
+## Pastebin API (https://pastebin.com/api)
 This will allow you to send code to pastebin and return a URL to the paste
 
 #### Examples
