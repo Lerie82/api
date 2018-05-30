@@ -14,8 +14,10 @@ The NASA API's have a limit of 1000/hr
 * Lists of near Earth objects
 
 #### Examples
->$nasa = new NasaApi("---- your key here ----");
->$pod = $nasa->getPod();
->$neos = $nasa->getNeos("2018-05-22","2018-05-29");
->$neo = $nasa->getNeo("3542519");
->$roverImgs = $nasa->getRoverImgs("CHEMCAM", 1, "curiosity");
+```
+$nasa = new NasaApi("---- your key here ----");
+$pod = $nasa->getPod();
+$neos = $nasa->getNeos("2018-05-22","2018-05-29");
+$neo = $nasa->getNeo("3542519");
+$roverImgs = $nasa->getRoverImgs("CHEMCAM", 1, "curiosity");
+```
