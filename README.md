@@ -23,3 +23,12 @@ $neos = $nasa->getNeos("2018-05-22","2018-05-29");
 $neo = $nasa->getNeo("3542519");
 $roverImgs = $nasa->getRoverImgs("CHEMCAM", 1, "curiosity");
 ```
+
+## Pastebin API
+This will allow you to send code to pastebin and return a URL to the paste
+
+#### Examples
+```
+$pb = new Pastebin("--- your key here ---");
+$url = $pb->newPaste("hello worldddssssss");
+```

@@ -2,6 +2,7 @@
 /*
 	api.php
 	lerie taylor
+	base class for the api
 */
 
 class API
@@ -47,15 +48,15 @@ class API
 		return $data;
 	}
 
-	//used for POST requests
-	function postApiData()
-	{
-	}
-
 	//set the api url, the full url
 	function setApiUrl($url)
 	{
 		$this->api_url = $url;
+	}
+
+	function getApiUrl()
+	{
+		return $this->api_url;
 	}
 
 	//die and dump an error message
