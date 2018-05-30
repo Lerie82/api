@@ -5,7 +5,8 @@ This project is a compilation of API that I use on my websites and in my applica
 The Api class lets you set api keys and urls and then get the data back.
 
 ## NASA API (https://api.nasa.gov/api.html)
-NASA offers a wide range of API's for the general public. You will need an API key for most requests, you can get one here: https://api.nasa.gov/index.html#apply-for-an-api-key
+NASA offers a wide range of API's for the general public. You will need an API key for most requests, you can get one here, https://api.nasa.gov/index.html#apply-for-an-api-key
+
 The NASA API's have a limit of 1000/hr
 
 * Mar Rovers' Images
